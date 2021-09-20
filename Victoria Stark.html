@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victoria Stark</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: linear-gradient(
+          110.3deg,
+          rgb(19, 16, 13) 8.7%,
+          rgb(216, 103, 77) 47.5%,
+          rgb(114, 43, 54) 89.1%
+        );
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 60px 20px 40px wheat;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        font-family: cuBrush Script MT, Brush Script Std, cursive;
+      }
+
+      h2 {
+        text-align: center;
+        line-height: 1.5;
+        font-weight: lighter;
+      }
+
+      p {
+        text-align: center;
+        font-size: 30px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: goldenrod;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: darkgoldenrod;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
+        transition: 0.5s;
+        opacity: 0.8px;
+      }
+
+      strong {
+        text-align: center;
+        color: wheat;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      a {
+        text-align: center;
+        color: wheat;
+      }
+
+      div {
+        text-align: center;
+      }
+
+      span {
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+
+    <h1>Victoria L. Stark</h1>
+    <h2>
+      <em> Learn more about our CEO </em>
+    </h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/017/301/original/Victoria_Retouch_3.jpg?1631905625"
+      width="300"
+      height="auto"
+      alt="Victoria Stark"
+    />
+    <p>
+      Born in Houston, Texas & raised in Texas City, Texas our CEO prides
+      herself in being a Texas girl. Some of her favorite things to do is
+      workout, gardern, try new foods and make beaded jewelry. In true Leo
+      fashion, she enjoyes doing outdoor activities in warm weather.
+    </p>
+    <span>
+      Victoria's newest interest is learning how to code. She has enrolled in a
+      3 week course offered by SheCodes.io and has been enjoying this new
+      journey. She plans to continue her education and master this new skill.
+    </span>
+    <button class="visitShop">👜Visit Shop</button>
+
+    <hr />
+    <p class="Ig">
+      <a href="https://www.instagram.com/__victorialove/" target="blank">
+        Follow her on Instagram
+      </a>
+    </p>
+
+    <div>
+      <strong> This page was built by Victoria L. Stark </strong>
+    </div>
+
+    <script>
+      function shop() {
+        let name = prompt("What is your name?");
+        let city = prompt("What city do you live in ?");
+
+        if (city === "Durham") {
+          alert(
+            "Thank you " +
+              name +
+              "! Please visit her at the local Black Flea Market this Sunday!"
+          );
+        } else {
+          alert(
+            "Thank you " +
+              name +
+              "! Please visit her online store: vsbeads.com!"
+          );
+        }
+      }
+
+      let visitShop = document.querySelector(".visitShop");
+      visitShop.addEventListener("click", shop);
+    </script>
+  </body>
+</html>
